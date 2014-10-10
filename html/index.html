@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+
+<?php require 'header.html' ?>
+
+<body>
+  <h3>Интерфейс для инспектирования урожая сборщика</h3>
+
+  <hr/>
+
+  <fieldset>
+    <legend>|Главное меню|</legend>
+    
+    <div class="content">
+    Доступные материалы:
+      <ul>
+        <li>
+          <a href="browse.php?page=wordfreq&sort=freqSort">
+          Частота употребления введенного слова среди жанров
+          </a>
+        </li><br/>
+
+        <li>
+          <a href="browse.php?page=wordlen&sort=lenSort">
+          Сравнение длины слов, входящих в тексты песен
+          </a>
+        </li><br/>
+
+        <li>
+          <a href="browse.php?page=kbinfo&sort=cntSort">
+          Характеристика собранных данных
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </fieldset>
+
+  <?php require 'footer.html' ?>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<?php require 'header.html' ?>
+
+<body>
+  <h3>Интерфейс для инспектирования урожая сборщика</h3>
+  <hr/>
+
+  <fieldset>
+    <legend>|Частота употребления введенного слова среди жанров|</legend>
+    
+    <div class="content">
+      <form method="GET">
+        Введите слово: 
+        <input name="word"/>
+        <input type="hidden" name="page" value="wordfreq"/>
+        <input type="hidden" name="sort" value=<?=$_GET['sort']?>>
+        <input type="submit" value="запросить результат"/>
+
+        <?php if(strlen($_GET['word']) != 0): ?>
+          <hr/>
+
+          <h4>Вы искали слово: `<?=$_GET['word']?>`</h4>
+
+          <table cellspacing="4">
+            <?php renderTable() ?>
+          </table>
+        <?php endif ?>
+        
+      </form>
+    </div>
+  </fieldset>
+
+  <br/>
+  <a href="index.php">На главную</a>
+
+  <?php require 'footer.html' ?>
+</body>
+
+</html>

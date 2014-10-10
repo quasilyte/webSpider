@@ -1,0 +1,27 @@
+body {
+  font-family: "bookman old style";
+}
+
+input {
+  font-family: "bookman old style";
+}
+
+fieldset {
+  border: 1px solid #336699;
+}
+
+hr {
+  border: 1px solid #336699;
+}
+
+.content {
+  padding: 4px;
+  background: #E9EEF9;
+  height: 100%;
+}
+
+td, th {
+  margin: 4px 8px 4px 8px;
+  background: white;
+  text-align: center;
+}
